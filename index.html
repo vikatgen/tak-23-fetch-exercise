@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nalja Generaator</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Naljad</h1>
+    </header>
+
+    <section class="search-section">
+        <label for="search">Otsi nalju</label>
+        <input type="search" id="search" placeholder="Sisestage otsimiseks...">
+        <span class="result-count"></span>
+        <div class="search-results"></div>
+    </section>
+
+    <div class="wrapper">
+        <label for="categories" class="category-label">Või vali kategooria</label>
+        <select name="categories" id="categories">
+            <option value="" disabled selected>Vali kategooria</option>
+        </select>
+        <button class="generate-joke-button">Genereeri nali</button>
+        <h4 class="random-jokes"></h4>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
